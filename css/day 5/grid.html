@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid
+    </title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* isse wo ek dum full width le lega matlb cover full body */
+        }
+        .item{
+            background-color: aqua;
+            border: 2px solid red;
+padding:10px;
+        }
+        .container {
+            display: grid;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section aside aside'
+            'footer footer footer footer';
+            /* iska mtlb apne ne pure area ko kitne colum me devide krna hai humeasha try
+            kro ki maximum me kre kyuki baad me colum add krne me dikkat hogi
+            or phit har colmn me naam daal diya kisme kya ayega.
+            row kitni chahiye wo toh div bna k finl ho gya colum ko yaha divivde kr dia
+              */
+           height: 100vh;
+        }
+        #navbar{
+            grid-area: navbar;
+            /* yeh apn ne har part ko alg alg naam de diya hai grid
+             area ka alag alag naam de diya  */
+        }
+        #section{
+            grid-area: section;
+            /* iska mtlb apne ne sirf naam rakha area ka  */
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About us Contactus
+        </div>
+        <div id="section" class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id suscipit mollitia dignissimos quia tempora non neque sit quod nisi commodi officiis aliquam, in cumque fugiat nihil quisquam, asperiores incidunt voluptatum.
+        </div>
+        <div id="aside" class="item" >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum et ratione veniam incidunt nihil velit
+            aut quaerat sint obcaecati nemo, eligendi in. Magni eveniet facilis maiores repellendus dolorum autem quo.
+        </div>
+        <div id="footer" class="item" >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur suscipit sunt itaque labore autem
+            temporibus beatae, distinctio necessitatibus. Delectus saepe cum minus, nobis hic vitae doloremque maiores
+            odit numquam eius?
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

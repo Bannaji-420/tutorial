@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{margin-top: 20px;
+            height: 500px;
+            width: 300px;
+        }
+        .movie{margin: auto;
+            padding: 2px;
+            border: 2px solid black;
+            text-align: center;
+
+        }
+
+
+
+
+        img:hover{
+            transform: scale(1.2);
+        }
+        a:visited{
+            color:red;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            color: yellow;
+            background-color: black;
+        }
+
+
+
+        tr:nth-child(odd){
+            background-color: antiquewhite;
+        }
+        /* row pr lagana ho toh yeh lgao */
+
+        td:nth-child(even){
+            background-color: aqua;
+        }
+        /* column pr lgana ho toh yeh lgao */
+
+
+p::first-line{
+    color: red;
+}
+/* yeh psweduo element hai isse sirf first line pr color hoga kisi 
+parragrapgh ki*/
+           
+
+p::before{
+    content: 'Topic:-';
+    color: aquamarine;
+    /* kisi bhi paragrapgh k pehle aa jayega */
+}
+p::after{
+    content: 'order';
+    color: blueviolet;
+    /* kisi para k last me yeh properties apply hogi */
+}
+    </style>
+</head>
+<body>
+    <div class="movie">
+        <img src="./image1.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero ipsam, harum praesentium sapiente veritatis expedita porro quibusdam quisquam eligendi sunt.</p>
+    </div>
+    <a href=""></a>
+   <table>
+    <tr>
+        <td>Name</td>
+        <td>UID</td>
+        <td>NUmber</td>
+        <td>roll</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>UID</td>
+        <td>NUmber</td>
+        <td>roll</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>UID</td>
+        <td>NUmber</td>
+        <td>roll</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>UID</td>
+        <td>NUmber</td>
+        <td>roll</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>UID</td>
+        <td>NUmber</td>
+        <td>roll</td>
+    </tr>
+
+   </table>
+        <p>para1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nesciunt officiis nemo optio amet eos libero accusantium fugit, dolore molestiae enim tempore. Earum eligendi fuga ad beatae! Reprehenderit iure impedit, quia vel, aspernatur quaerat delectus perspiciatis eum consequuntur temporibus quos ullam quae mollitia nostrum similique molestias facilis velit quis ut.</p>
+        <p>para1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nesciunt officiis nemo optio amet eos libero accusantium fugit, dolore molestiae enim tempore. Earum eligendi fuga ad beatae! Reprehenderit iure impedit, quia vel, aspernatur quaerat delectus perspiciatis eum consequuntur temporibus quos ullam quae mollitia nostrum similique molestias facilis velit quis ut.</p>
+        <p>para1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nesciunt officiis nemo optio amet eos libero accusantium fugit, dolore molestiae enim tempore. Earum eligendi fuga ad beatae! Reprehenderit iure impedit, quia vel, aspernatur quaerat delectus perspiciatis eum consequuntur temporibus quos ullam quae mollitia nostrum similique molestias facilis velit quis ut.</p>
+
+        <p>para1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nesciunt officiis nemo optio amet eos libero accusantium fugit, dolore molestiae enim tempore. Earum eligendi fuga ad beatae! Reprehenderit iure impedit, quia vel, aspernatur quaerat delectus perspiciatis eum consequuntur temporibus quos ullam quae mollitia nostrum similique molestias facilis velit quis ut.</p>
+
+        <p>para1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nesciunt officiis nemo optio amet eos libero accusantium fugit, dolore molestiae enim tempore. Earum eligendi fuga ad beatae! Reprehenderit iure impedit, quia vel, aspernatur quaerat delectus perspiciatis eum consequuntur temporibus quos ullam quae mollitia nostrum similique molestias facilis velit quis ut.</p>
+        <p>para1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nesciunt officiis nemo optio amet eos libero accusantium fugit, dolore molestiae enim tempore. Earum eligendi fuga ad beatae! Reprehenderit iure impedit, quia vel, aspernatur quaerat delectus perspiciatis eum consequuntur temporibus quos ullam quae mollitia nostrum similique molestias facilis velit quis ut.</p>
+
+
+    </body>
+</html>

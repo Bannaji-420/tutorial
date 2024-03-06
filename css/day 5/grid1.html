@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid1</title>
+    <style>
+        .container {
+            height: 100vh;
+            display: grid;
+            grid-template-areas:
+                'nav nav nav  nav'
+                'sidebar main main main'
+                'sidebar content1 content2 content3'
+                'footer footer footer footer'
+            ;
+            gap: 16px; ;
+            /* it provide gap between roe and column */
+            grid-template-rows: 100px 200px 100px 50px;
+            /* perticulR height di hai */
+
+            grid-template-rows: 1fr 2fr 1fr 0.5fr;
+            /* other way to give width */
+           
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: antiquewhite;
+        }
+
+        main {
+            grid-area: main;
+            background-color: red;
+        }
+
+        #sidebar {
+            grid-area: slidebar;
+            background-color: aqua;
+        }
+
+        #content1 {
+            grid-area:content1;
+            background-color: aquamarine;
+
+        }
+
+        #content2 {
+            grid-area:content2;
+            background-color: rgb(112, 144, 133);
+        }
+
+        #content3 {
+            grid-area:content3;
+            background-color: blanchedalmond;
+        }
+
+        #footer {
+            grid-area: footer;
+            background-color: black;
+            color: white;
+        }
+
+    
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="common">Navbar</nav>
+        <main class="common">Main</main>
+        <div id="sidebar" class="common">Lorem ipsum dolor sit amet.</div>
+        <div id="content1" class="common">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, nobis?</div>
+        <div id="content2" class="common">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ratione?</div>
+        <div id="content3" class="common">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, dolorem!</div>
+        <div id="footer" class="common">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quibusdam.</div>
+
+    </div>
+</body>
+
+</html>

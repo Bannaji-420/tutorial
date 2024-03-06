@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        /* .container{
+            background-color: blueviolet;
+          /* display: flex; */
+
+        /* }
+      
+        .navbar a{
+            float: right;
+            padding: 10px;
+        }
+   h3{
+    float: left;
+   }
+        img{
+            margin-left:300px ;
+        } */
+        .container {
+            background-color: bisque;
+            display: flex;
+            justify-content: space-between;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+<input type="file">
+        <h3>Navbar</h3>
+        <img src="data:image/jpeg;base64,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"
+            alt="" height="50px" width="50px">
+
+        <div><a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact us</a>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>

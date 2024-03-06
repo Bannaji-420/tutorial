@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgroundclip</title>
+<style>
+body{
+    background-image: url(https://png.pngtree.com/background/20230614/original/pngtree-fall-wallpaper-autumn-autumn-wallpaper-picture-image_3498556.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #F6DCAC;
+    
+
+}
+.contain{
+    background-color: rgba(0,0,0,0.5);
+    height:500px;
+    width: 600px;
+    text-align: center;
+    margin: 50px auto;
+    
+    padding: 20px;
+    border: 10px dotted orange;
+    
+    
+    /* background-clip: content-box; */
+    /* background clip cuts the unwanted backround and 
+    start backround jaha se sontent start hota hai bass uska back rehne deta hai 
+    baki extra background hta deta hai  */
+   
+   
+   
+    background-clip: padding-box;
+    /* jaha se padding start hui hai waha se background start hoga 
+    mtlb padding wala or cointent ka area dono me background aayega */
+
+   
+   
+   
+    /* background-clip: border-box; */
+    /* jaha se BORDER START HOTI HAI WAHA SE BACKGROUND START HOGA */
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="contain">
+        <h1>Love for Autum</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolorum ipsam veritatis consequuntur obcaecati alias repellat eaque, placeat sit sunt eum dolor repellendus ab architecto quia perspiciatis, vel itaque nesciunt quasi explicabo error? Dolores quam libero necessitatibus non consectetur sit qui inventore beatae aliquid consequuntur. Vero et velit est nulla quaerat vitae exercitationem, non mollitia saepe provident impedit ipsum consequuntur laboriosam ratione repudiandae reiciendis expedita hic cupiditate? Esse sunt quia in odit provident non commodi sint error qui aperiam. Doloribus nobis, earum, dicta nisi veniam soluta hic, harum qui rem voluptates aut unde inventore ea totam quo. Molestias, similique exercitationem?</p>
+   /
+</div>
+    
+</body>
+</html>

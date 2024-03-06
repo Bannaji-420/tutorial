@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            height: 500px;
+            width: 500px;
+            background-color: blue;
+        }
+        .child{
+            height: 100px;
+            width:100px;
+            background-color: rgb(29, 17, 1);
+            /* transition: all 2s ease; */
+        }
+        .container:hover > .child{
+            /* container me hover krunga to child me property show krega */
+            /* transform: translateX(400px);
+            background-color: white; */
+            /* isme dheere dheere jayega or color bhi chnge hoga */
+
+            animation: round 2s ease-in  alternate infinite;
+            /* round yaha pr animation ka naam hai 2second me complete hogi
+            forward mtlb last me jake rukh jayegi  infinite mtlb infinatite tym chlegi
+            jb tk hover rahega   */
+
+/* animation-timing-function: ease-in; */
+
+
+/* yeh animation ko play paused krne k liye hita hai  */
+/* animation-play-state: paused; */
+
+            /* forward mtlb wo waha destination pr jake rukh jayega */
+
+        }
+
+
+        @keyframes round{
+            /* statein the animation mtlb initail state pr kya hoga then
+             pre mid pr kya hogathe post mid or end*/
+             0%{
+             transform: translateX(0px);
+             }
+             33%{
+                transform: translateY(400px);
+             }
+             75%{
+                transform: translateX(400px) translateY(400px);
+            
+             }
+             100%{
+                transform: translateX(400px);
+             }
+
+        }
+    </style> 
+</head>
+<body>
+   <div class="container">
+    <div class="child">
+
+    </div>
+   </div> 
+</body>
+</html>
